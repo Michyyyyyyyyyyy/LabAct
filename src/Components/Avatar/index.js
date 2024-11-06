@@ -10,7 +10,7 @@ const Avatar = ({ isDarkMode }) => {
           style={styles.image}
         />
         <View style={styles.joinedContainer}>
-          <Text style={[styles.nameText, isDarkMode && styles.darkText]}>Michael V </Text> 
+          <Text style={[styles.nameText, isDarkMode && styles.darkText]}>Michael Sebere </Text> 
           <Text style={[styles.statusText, isDarkMode ? styles.darkStatusText : styles.lightStatusText]}>
             Joined a long long time ago
           </Text>
@@ -28,7 +28,7 @@ const styles = StyleSheet.create({
     alignItems: 'center',
     width: '100%',
     height: 250, 
-    marginBottom: -10,
+    marginBottom: 350,
   },
   darkContainer: {
     backgroundColor: '#1C1C1E',
@@ -56,10 +56,9 @@ const styles = StyleSheet.create({
   nameText: {
     fontSize: 18,  
     fontWeight: 'bold',
-    color: 'black',  
+    color: 'white',  
     textShadowColor: '#FFFFFF', 
-    textShadowOffset: { width: 1, height: 1 }, 
-    textShadowRadius: 2, 
+  
     marginBottom: 3,  
   },
   darkText: {
@@ -76,10 +75,10 @@ const styles = StyleSheet.create({
   darkStatusText: {
     fontSize: 14,
     fontWeight: 'bold',
-    color: 'gray',  
-    textShadowColor: '#FFFFFF', 
-    textShadowOffset: { width: 1, height: 1 }, 
-    textShadowRadius: 2, 
+    color: 'white', 
+    textShadowColor: '#FFFFFF',
+    textShadowOffset: { width: 1, height: 1 },
+    textShadowRadius: 2,
   },
 });
 

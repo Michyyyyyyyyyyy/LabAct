@@ -1,5 +1,6 @@
 import { View, Text, StyleSheet, Switch, TouchableOpacity, Alert } from 'react-native';
 import Icon from 'react-native-vector-icons/Ionicons';
+import Avatar from '../Avatar';
 
 const SettingsCard = ({ isDarkMode, toggleSwitch }) => {
 
@@ -15,6 +16,7 @@ const SettingsCard = ({ isDarkMode, toggleSwitch }) => {
 
   return (
     <View style={[styles.container, isDarkMode && styles.darkContainer]}>
+      <Avatar />
       <View style={styles.section}>
         <TouchableOpacity style={[styles.rowWithBackground, isDarkMode ? styles.darkRow : styles.lightRow]}>
           <Icon name="person-circle-outline" size={24} color={isDarkMode ? "white" : "gray"} />
@@ -60,7 +62,7 @@ const SettingsCard = ({ isDarkMode, toggleSwitch }) => {
 const styles = StyleSheet.create({
   container: {
     padding: 30,
-    backgroundColor: '#F7F7F7', 
+    backgroundColor: 'gray', 
     borderRadius: 10,
     shadowColor: "#000",
     shadowOpacity: 0.1,
@@ -85,6 +87,7 @@ const styles = StyleSheet.create({
     padding: 15,
     borderRadius: 10,
     marginVertical: 8,
+    bottom: 70,
     
   },
   lightRow: {
@@ -113,7 +116,7 @@ const styles = StyleSheet.create({
     marginLeft: 10,
   },
   signOutButton: {
-    marginTop: 20,
+    marginTop: 10,
     paddingVertical: 15,
     backgroundColor: 'white',
     borderColor: 'black', 
